@@ -2,11 +2,11 @@
   "name": "game_store",
   "version": "1.0.0",
   "description": "store",
-  "main": "App.js",
+  "main": "index.js",
   "scripts": {
-    "build": ".\\node_modules\\.bin\\webpack",
-    "browse": ".\\node_modules\\.bin\\lite-server",
-    "livebuild": ".\\node_modules\\.bin\\webpack-dev-server --progress --colors --history-api-fallback"
+    "build": "npx webpack",
+    "browse": "npx lite-server",
+    "livebuild": "npx webpack-dev-server --progress --colors --history-api-fallback"
   },
   "author": "",
   "license": "ISC",
