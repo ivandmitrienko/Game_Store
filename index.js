@@ -4,10 +4,10 @@ import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
 import Header from './components/Header';
 import Footer from './components/Footer';
-import About from './components/About';
-import Service from './components/Action';
-import Service from './components/Strategy';
-import Service from './components/Fantasy.js';
+import Home from './components/Home';
+import Action from './components/Action';
+import Strategy from './components/Strategy';
+import Fantasy from './components/Fantasy.js';
 
 const Routing = () => {
     return(
