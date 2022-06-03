@@ -1,32 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './App';
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
-
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Home from './components/Home';
-import Action from './components/Action';
-import Strategy from './components/Strategy';
-import Fantasy from './components/Fantasy.js';
+import Header from './components/header'
+import Footer from './components/footer'
+import About from './components/about'
+import Service from './components/service'
 
 const Routing = () => {
-    return(
-      <Router>
-        <Header/>
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/Action" component={Action} />
-          <Route path="/Strategy" component={Strategy} />
-          <Route path="/Fantasy" component={Fantasy} />
-        </Switch>
-        <Footer/>
-      </Router>
-    )
+  return(
+    <Router>
+      <Header/>
+      <Switch>
+        <Route exact path="/" component={App} />
+        <Route path="/about" component={About} />
+        <Route path="/service" component={Service} />
+      </Switch>
+      <Footer/>
+    </Router>
+  )
 }
 
+
 ReactDOM.render(
-    <React.StrictMode>
-      <Routing />
-    </React.StrictMode>,
-    document.getElementById('container')
-  );
+  <React.StrictMode>
+    <Routing />
+  </React.StrictMode>,
+  document.getElementById('container')
+);
