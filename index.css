@@ -68,5 +68,5 @@ main a:hover {
 
 .active {
   color: var(--color-active);
-  cursor: default;
+  cursor: pointer;
 }
