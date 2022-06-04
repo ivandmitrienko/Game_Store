@@ -9,10 +9,10 @@ function App() {
     <div className="App">
       <header>
         <span>Game Store</span>
-        <a href="/">Home</a>
-        <a href="/action">Action</a>
-        <a href="/strategy">Strategy</a>
-        <a href="/fantasy">Fantasy</a>
+        <Link to="/">Home</Link>
+        <Link to="/action">Action</Link>
+        <Link to="/strategy">Strategy</Link>
+        <Link to="/fantasy">Fantasy</Link>
       </header>
       <Routes>
         <Route path="/" element={ <Homepage /> } />
