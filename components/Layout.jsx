@@ -1,6 +1,7 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
+import { CostumLink } from './CostumLink.jsx';
 
-const setActive = ({isActive}) => ({color:isActive ? 'var(--color-active)': 'white'});
+// const setActive = ({isActive}) => ({color:isActive ? 'var(--color-active)': 'white'});
 
 const Layout = () => {
     
@@ -8,10 +9,10 @@ const Layout = () => {
         <div>
             <header>
                 <span>Game Store</span>
-                <NavLink to="/" style={setActive}>Home</NavLink>
-                <NavLink to="/action" style={setActive}>Action</NavLink>
-                <NavLink to="/strategy" style={setActive}>Strategy</NavLink>
-                <NavLink to="/fantasy" style={setActive}>Fantasy</NavLink>
+                <CostumLink to="/" >Home</CostumLink>
+                <CostumLink to="/action" >Action</CostumLink>
+                <CostumLink to="/strategy" >Strategy</CostumLink>
+                <CostumLink to="/fantasy" >Fantasy</CostumLink>
             </header>
             <main className="container">
               <Outlet />
