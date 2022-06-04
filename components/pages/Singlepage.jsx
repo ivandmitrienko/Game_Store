@@ -1,5 +1,5 @@
-import { useParams, Link, useNavigate } from 'react-router-dom'
-import { useState, useEffect } from 'react'
+import { useParams } from 'react-router-dom';
+// import { useState, useEffect } from 'react';
 
 // const Singlepage = () => {
 //     const {id} = useParams();
@@ -32,9 +32,12 @@ import { useState, useEffect } from 'react'
 // }
 
 const Singlepage = () => {
+
+    const {id} = useParams();
+
     return (
         <div>
-            1
+            {id}
         </div>
     )
 }
