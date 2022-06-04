@@ -1,7 +1,7 @@
 const Fantasy = () => {
     return (
         <div>
-            This page doesn't exist. 
+            <h1>Fantasy Games</h1>
         </div>
     )
 }

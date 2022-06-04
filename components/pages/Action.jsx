@@ -2,7 +2,7 @@ const Action = () => {
     
     return (
         <div>
-            <h1>Our news</h1>
+            <h1>Action Games</h1>
               
         </div>
     )

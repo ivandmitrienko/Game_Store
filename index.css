@@ -19,10 +19,15 @@ body {
 header {
   background-color: var(--color-bg);
   padding: 3rem 0;
-  text-align: center;
   position: relative;
-  
+  text-align: center;
 }
+
+a{
+  margin-right: 15px;
+  font-size: 20px;
+}
+
 header > span {
   color: #ffff;
   position: absolute;
