@@ -14,9 +14,8 @@ const Homepage = () => {
     }, []);
 
     return (
-        <div>
-            <h1>Our Games</h1>
-            {games && <Gamelist games={games} title = "Blog"/>}
+        <div className='Homepage'>
+            {games && <Gamelist games={games} key={games.id}/>}
         </div>
     )
 }
