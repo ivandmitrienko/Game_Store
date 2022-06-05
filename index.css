@@ -35,6 +35,14 @@ header > span {
   left: 3%;
   font-size: 30px;
 }
+
+.basket{
+  position: absolute;
+  top: 40%;
+  right:3%;
+  font-size: 20px;
+  color: #ffffff;
+}
 header > a {
   color: white;
   text-decoration: none;
