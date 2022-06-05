@@ -6,6 +6,11 @@ const Action = () => {
 
     const [posts, setPost] = useState([]);
 
+    const linkStyle = {
+        margin: "1rem",
+        textDecoration: "none",
+      };
+
     useEffect(() => {
         fetch(`https://jsonplaceholder.typicode.com/posts`)
             .then(res => res.json())
@@ -17,8 +22,8 @@ const Action = () => {
             <h1>Action Games</h1>
             {
                posts.map(post => (
-                   <Link key={post.id} to={`/action/${post.id}`}>
-                       <li>{post.title}</li>
+                   <Link key={post.id} to={`/action/${post.id}`} style={linkStyle}>
+                       <div>{post.title}</div>
                    </Link>
                ))
             }    
