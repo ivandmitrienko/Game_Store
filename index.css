@@ -10,6 +10,7 @@
 .Homepage{
   display: flex;
   flex-wrap: wrap;
+  margin-top: 120px;
 }
 
 body {
@@ -24,8 +25,10 @@ body {
 header {
   background-color: var(--color-bg);
   padding: 3rem 0;
-  position: relative;
+  position: fixed;
   text-align: center;
+  width: 100%;
+  z-index: 999;
 }
 
 a{
