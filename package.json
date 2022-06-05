@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "concurrently \"npm run livebuild\" \"npm run server\"",
+    "server": "json-server -w server/db.json",
     "build": "npx webpack",
     "browse": "npx lite-server",
     "livebuild": "npx webpack-dev-server --progress --colors --history-api-fallback"
