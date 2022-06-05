@@ -5,7 +5,8 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 const Basket = () => {
     return(
         <div className="BasketBlock">
-            <AiOutlineShoppingCart />
+            <AiOutlineShoppingCart size={25} className="BasketBlock__icon"/>
+            <span className="BasketBlock__total-price">1руб.</span>
         </div>
     )
 }
