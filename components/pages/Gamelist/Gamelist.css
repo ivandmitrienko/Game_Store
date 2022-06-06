@@ -41,6 +41,6 @@
 
 .game-item__buy{
     position: absolute;
-    right: 0;
-    bottom: -12px;
+    right: 5px;
+    bottom: 5px;
 }
