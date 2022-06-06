@@ -1,5 +1,5 @@
-import classNames from "classnames";
 import React from "react";
+import classNames from "classnames";
 import './Button.css';
 
 const Button = ({onClick, type, children, size = 's'}) => {
@@ -14,7 +14,7 @@ const Button = ({onClick, type, children, size = 's'}) => {
     });
 
     return (      
-            <button className="btnClass" onClick={onClick}>
+            <button className={btnClass} onClick={onClick}>
                 {children}
             </button>      
           )
@@ -22,4 +22,4 @@ const Button = ({onClick, type, children, size = 's'}) => {
     
   }
   
-  export {Button};
+  export {Button};s

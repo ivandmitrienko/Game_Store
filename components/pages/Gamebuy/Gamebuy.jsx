@@ -1,6 +1,6 @@
 import React from "react";
 import './Gamebuy.css';
-import '../../Button/Button.jsx';
+import { Button } from '../../Button/Button.jsx';
 
 const Gamebuy = ({game}) => {
 
