@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import { Gamelist } from './Gamelist.jsx';
+import { Gamelist } from './Gamelist/Gamelist.jsx';
 
 
 const Homepage = () => {
