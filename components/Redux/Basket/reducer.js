@@ -18,4 +18,4 @@ const basketSlice = greatSlice({
 });
 
 export const { setItemInBasket, deleteItemFromBasket } = basketSlice.actions;
-
+export default basketSlice.reducer;
