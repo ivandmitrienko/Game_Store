@@ -1,6 +1,6 @@
-import { greatSlice } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 
-const basketSlice = greatSlice({
+const basketSlice = createSlice({
     name: 'Basket',
     initialState:{
         itemsInBasket: []

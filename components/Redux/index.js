@@ -4,6 +4,6 @@ import basketReducer from "./Basket/reducer";
 
 export const store = configureStore({
     reducer: {
-        basket: basketReducer
-    }
-})
+        basket: basketReducer,
+    },
+});
