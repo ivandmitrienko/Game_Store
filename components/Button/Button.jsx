@@ -22,4 +22,4 @@ const Button = ({onClick, type, children, size = 's'}) => {
     
   }
   
-  export {Button};s
+  export {Button};
