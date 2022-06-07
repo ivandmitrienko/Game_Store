@@ -1,17 +1,16 @@
 .BasketMenu {
     position: absolute;
-    top: 30px;
+    top: 35px;
     left: -300px;
-    background-color: rgb(36, 37, 41);
-    width: 400px;
+    background-color: rgb(4, 10, 14);
+    width: 300px;
     z-index: 2;
     border-radius: 15px;
 
 }
 
 .BasketMenu__arrange {
-    margin-top: 20px;
-    padding: 20px 0;
+    padding: 20px;
     border-top: 1px solid rgba(255, 255, 255, 0.4);
 }
 
@@ -20,4 +19,8 @@
     justify-content: space-between;
     margin-bottom: 15px;
 
+}
+
+.BasketMenu__games-list{
+    padding: 5px;
 }

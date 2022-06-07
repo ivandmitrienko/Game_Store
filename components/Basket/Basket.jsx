@@ -14,7 +14,7 @@ const Basket = () => {
         <div className="BasketBlock">
             <AiOutlineShoppingCart size={25} className="BasketBlock__icon"/>
             <span className="BasketBlock__total-price">{totalPrice}</span>
-            <BasketMenu/>
+            <BasketMenu items={ items } onclick={()=>null}/>
         </div>
     )
 }
