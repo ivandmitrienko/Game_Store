@@ -10,14 +10,16 @@ import "./Gamelist.css";
 const Gamelist = ({games}) => {
 
     const navigate = useNavigate();
-    const handleClick = () => {dispatch(setCurrentGame(games));
-    navigate(`/${games.title}`);}// игра сразу же окажется в redux и переместится на другую страницу 
     const dispatch = useDispatch();
+    // const handleClick = () => { dispatch(setCurrentGame(games));
+    // navigate(`/${games.title}`);} //игра сразу же окажется в redux и переместится на другую страницу 
+    
 
     return (      
             <div className="items">
                 {games.map((game) => (
-                    <div className="game-item" key={game.id} onClick={handleClick}>
+                    <div className="game-item" key={game.id} onClick={() => { dispatch(setCurrentGame(game));
+                        navigate(`/${game.title}`);}}>
                         <Gamecover image={game.image} />
                         <div className="game-item__details">
                             <span className="game-item__title">{game.title}</span>
