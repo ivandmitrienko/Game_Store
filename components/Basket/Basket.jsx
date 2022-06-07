@@ -13,7 +13,7 @@ const Basket = () => {
     return(
         <div className="BasketBlock">
             <AiOutlineShoppingCart size={25} className="BasketBlock__icon"/>
-            <span className="BasketBlock__total-price">{totalPrice}</span>
+            {totalPrice ? <span className="BasketBlock__total-price">{totalPrice} руб.</span>: null}
             <BasketMenu items={ items } onclick={()=>null}/>
         </div>
     )
