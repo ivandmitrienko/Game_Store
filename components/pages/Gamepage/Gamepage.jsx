@@ -12,7 +12,7 @@ const Gamepage = () => {
     if(!game) return null;
   
     return (   
-       <div className="Gamepage">
+       <div className="Gamepage" style={{marginTop:"120px"}}> 
            <h1 className="Gamepage__title">{game.title}</h1>
            <div className="Gamepage__content">
                <div className="Gamepage__left">

@@ -1,0 +1,17 @@
+.Gamepage__content{
+    display: flex;
+}
+
+.Gamepage__left{
+    width: 70%;
+}
+
+.Gamepage__right{
+    width: 30%;
+}
+
+.Gamepage__buy-game{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
