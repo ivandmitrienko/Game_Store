@@ -4,12 +4,10 @@ import './orderPage.css';
 const OrderPage = () => {
 
   
-    return (      
-        <Link to ="">
+    return (       
             <div>
                 fff
-            </div>
-        </Link>
+            </div> 
     )
   
     

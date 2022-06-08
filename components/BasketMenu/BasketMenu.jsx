@@ -4,7 +4,6 @@ import { Button } from '../Button/Button.jsx';
 import { BasketItem } from '../BasketItem/BasketItem.jsx';
 import "./BasketMenu.css";
 
-
 const BasketMenu = ({ items, onclick }) => {
 
     return (
