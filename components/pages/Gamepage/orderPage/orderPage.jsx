@@ -5,7 +5,7 @@ const OrderPage = () => {
 
   
     return (       
-            <div>
+            <div className="orderPage">
                 fff
             </div> 
     )
