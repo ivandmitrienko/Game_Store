@@ -17,7 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={ <Layout /> }>
             <Route index element={ <Homepage /> } />
-            <Route path="/:title" element={ <Gamepage /> } />
+            <Route path="game/:id" element={ <Gamepage /> } />
             <Route path="action" element={ <Action /> } />
             <Route path="action/:id" element={ <Singlepage /> } />
             <Route path="strategy" element={ <Strategy /> } />

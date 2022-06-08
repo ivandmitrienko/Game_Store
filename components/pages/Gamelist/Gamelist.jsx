@@ -22,7 +22,7 @@ const Gamelist = ({games}) => {
             <div className="items">
                 {games.map((game) => (
                     <div className="game-item" key={game.id} onClick={() => { dispatch(setCurrentGame(game));
-                        navigate(`/${game.title}`);}}>
+                        navigate(`/game/${game.id}`);}}>
                         <Gamecover image={game.image} />
                         <div className="game-item__details">
                             <span className="game-item__title">{game.title}</span>

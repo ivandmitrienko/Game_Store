@@ -1,5 +1,6 @@
 import { NavLink, Outlet } from "react-router-dom";
 import { Basket } from "./Basket/Basket.jsx";
+import "./Layout.css";
 
 const setActive = ({isActive}) => ({color:isActive ? 'var(--color-active)': 'white'});
 
@@ -21,7 +22,7 @@ const Layout = () => {
               <Outlet />
             </main>
             
-            <footer className="container">1212</footer>
+            <footer>What Would You Choose?</footer>
         </div>  
     )
 }
