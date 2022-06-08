@@ -5,13 +5,11 @@ import { calcTotalPrice } from '../utils';
 import { BasketMenu } from '../BasketMenu/BasketMenu.jsx';
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { ItemsInBasket } from '../itemsInBasket/itemsInBasket.jsx';
-// import { useNavigate } from "react-router-dom";
 
 const Basket = () => {
     const [isBasketMenuVisible, setBasketMenuVisible] = useState(false);
     const items = useSelector(state => state.basket.itemsInBasket);
     const totalPrice = calcTotalPrice(items);
-    // const navigate = useNavigate();
     const handleClick = () => {setBasketMenuVisible(false)}
 
 
