@@ -6,7 +6,7 @@ import { Action } from "./pages/Action.jsx";
 import { Fantasy } from "./pages/Fantasy.jsx";
 import { Singlepage } from "./pages/Singlepage.jsx";
 import { Gamepage } from "./pages/Gamepage/Gamepage.jsx";
-
+import { OrderPage } from './pages/Gamepage/orderPage/orderPage.jsx';
 import { Layout } from "./Layout.jsx";
 import { store } from "./Redux/index.js";
 
@@ -22,6 +22,7 @@ function App() {
             <Route path="action/:id" element={ <Singlepage /> } />
             <Route path="strategy" element={ <Strategy /> } />
             <Route path="fantasy" element={ <Fantasy /> } />
+            <Route path="/order" element={ <OrderPage /> } />
           </Route>
         </Routes>
       </Provider>

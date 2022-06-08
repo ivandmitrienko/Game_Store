@@ -7,7 +7,6 @@ import "./BasketMenu.css";
 
 const BasketMenu = ({ items, onclick }) => {
 
-
     return (
         <div className="BasketMenu">
             <div className="BasketMenu__games-list">
