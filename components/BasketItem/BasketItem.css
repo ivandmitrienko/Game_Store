@@ -11,3 +11,8 @@
     display: flex;
     align-items: center;
 }
+
+.orderItem__delete-icon{
+    margin-left: 5px;
+    cursor: pointer;
+}
