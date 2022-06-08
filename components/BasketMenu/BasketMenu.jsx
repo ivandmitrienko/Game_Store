@@ -4,7 +4,7 @@ import { Button } from '../Button/Button.jsx';
 import { BasketItem } from '../BasketItem/BasketItem.jsx';
 import "./BasketMenu.css";
 
-const BasketMenu = ({ items, onclick }) => {
+const BasketMenu = ({ items, onClick }) => {
 
     return (
         <div className="BasketMenu">
@@ -24,7 +24,7 @@ const BasketMenu = ({ items, onclick }) => {
                         <span>Итого:</span>
                         <span>{calcTotalPrice(items)} руб.</span>
                     </div>
-                    <Button type="primary" size='m' onClick={onclick}>
+                    <Button type="primary" size='m' onClick={onClick}>
                         Оформить заказ
                     </Button>
                 </div> :
