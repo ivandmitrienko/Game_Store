@@ -1,15 +1,19 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import { Gamelist } from './Gamelist/Gamelist.jsx';
 
-const Fantasy = () => {
+export const Category = () => {
 
-    const [games, setPost] = useState(null);
+    const params = useParams();
+    console.log(params);
+
+    const [games, setGames] = useState(null);
 
     useEffect(() => {
-        fetch(`http://localhost:3000/games?genres_like=Fantasy`)
+        fetch(`http://localhost:3000/games?genres=${params.type}`)
         .then(res => res.json())
-        .then(data => setPost(data))
+        .then(data => {console.log(data);setGames(data);})
     }, []);
     
     return (
@@ -19,4 +23,3 @@ const Fantasy = () => {
     )
 }
 
-export {Fantasy};

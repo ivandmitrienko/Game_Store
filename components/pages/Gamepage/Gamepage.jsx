@@ -1,6 +1,5 @@
 import React from "react";
-import { useSelector } from "react-redux";
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useState, useEffect } from 'react';
 import { Gamegenre } from "../../Genre/Genre.jsx";
 import { Gamebuy } from "../Gamebuy/Gamebuy.jsx";

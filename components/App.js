@@ -1,14 +1,11 @@
 import { Routes, Route, useParams } from "react-router-dom";
 import { Provider } from "react-redux";
 import { Homepage } from "./pages/Homepage.jsx";
-import { Strategy } from "./pages/Strategy.jsx";
-import { Action } from "./pages/Action.jsx";
-import { Fantasy } from "./pages/Fantasy.jsx";
-import { Singlepage } from "./pages/Singlepage.jsx";
 import { Gamepage } from "./pages/Gamepage/Gamepage.jsx";
 import { OrderPage } from './pages/Gamepage/orderPage/orderPage.jsx';
 import { Layout } from "./Layout.jsx";
 import { store } from "./Redux/index.js";
+import { Category } from "./pages/Category.jsx";
 
 function App() {
 
@@ -20,8 +17,8 @@ function App() {
             <Route index element={ <Homepage /> } />
             <Route path="game/:id" element={ <Gamepage /> } />
             <Route path="/order" element={ <OrderPage /> } />
-          </Route>
-          <Route path="category/:type" element={ <Action /> } />
+            <Route path="category/:genres" element={ <Category /> } />
+          </Route>     
         </Routes>
       </Provider>
     </div>
