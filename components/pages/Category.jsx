@@ -5,16 +5,14 @@ import { Gamelist } from './Gamelist/Gamelist.jsx';
 
 export const Category = () => {
 
-    const params = useParams();
-    console.log(params);
-
+    const {genres} = useParams();
     const [games, setGames] = useState(null);
 
     useEffect(() => {
-        fetch(`http://localhost:3000/games?genres=${params.type}`)
+        fetch(`http://localhost:3000/games?genres=${genres}`)
         .then(res => res.json())
-        .then(data => {console.log(data);setGames(data);})
-    }, []);
+        .then(data => setGames(data))
+    }, [genres]);
     
     return (
           <div className='Games'>

@@ -1,4 +1,4 @@
-import { Routes, Route, useParams } from "react-router-dom";
+import { Routes, Route} from "react-router-dom";
 import { Provider } from "react-redux";
 import { Homepage } from "./pages/Homepage.jsx";
 import { Gamepage } from "./pages/Gamepage/Gamepage.jsx";
