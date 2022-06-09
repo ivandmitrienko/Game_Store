@@ -1,7 +1,7 @@
 import React from "react";
 import './BasketItem.css';
 
-const BasketItem = ({title, price, id}) => {
+const BasketItem = ({title, price}) => {
 
   
     return (      
