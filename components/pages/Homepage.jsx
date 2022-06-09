@@ -1,8 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { Gamelist } from './Gamelist/Gamelist.jsx';
-
-
 const Homepage = () => {
 
     const [games, setPost] = useState(null);
@@ -14,9 +12,9 @@ const Homepage = () => {
     }, []);
 
     return (
-        <div className='Homepage'>
-            {games && <Gamelist games={games} key={games.id}/>}
-        </div>
+            <div className='Games'>  
+                {games && <Gamelist games={games} key={games.id}/>}
+            </div>
     )
 }
 

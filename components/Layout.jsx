@@ -11,9 +11,9 @@ const Layout = () => {
             <header>
                 <span>Game Store</span>
                 <NavLink to="/" style={setActive} >Home</NavLink>
-                <NavLink to="/action" style={setActive}>Action</NavLink>
-                <NavLink to="/strategy" style={setActive}>Strategy</NavLink>
-                <NavLink to="/fantasy" style={setActive}>Fantasy</NavLink>
+                <NavLink to="/category/action" style={setActive}>Action</NavLink>
+                <NavLink to="/category/strategy" style={setActive}>Strategy</NavLink>
+                <NavLink to="/category/fantasy" style={setActive}>Fantasy</NavLink>
                 <div className="basket">
                     <Basket />
                 </div>

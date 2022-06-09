@@ -1,34 +1,26 @@
+import React from 'react';
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-
+import { useParams } from 'react-router-dom';
+import { Gamelist } from './Gamelist/Gamelist.jsx';
 
 const Action = () => {
 
-    const [posts, setPost] = useState([]);
+    const params = useParams();
+    console.log(params);
 
-    const linkStyle = {
-        margin: "1rem",
-        textDecoration: "none",
-      };
+    const [games, setPost] = useState(null);
 
     useEffect(() => {
-        fetch(`https://jsonplaceholder.typicode.com/posts`)
-            .then(res => res.json())
-            .then(data => setPost(data))
+        fetch(`http://localhost:3000/games?genres_like=Action`)
+        .then(res => res.json())
+        .then(data => setPost(data))
     }, []);
     
     return (
-        <div>
-            <h1>Action Games</h1>
-            {
-               posts.map(post => (
-                   <Link key={post.id} to={`/action/${post.id}`} style={linkStyle}>
-                       <div>{post.title}</div>
-                   </Link>
-               ))
-            }    
-        </div>
+          <div className='Games'>
+            {games && <Gamelist games={games} key={games.id}/>}
+        </div>    
     )
 }
 
-export {Action}
+export {Action};
