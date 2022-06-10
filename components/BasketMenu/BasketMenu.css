@@ -9,6 +9,14 @@
 
 }
 
+@media screen and (max-width:500px){
+    .BasketMenu{
+        width: 150px;
+        left: -120px;
+        text-align: center;
+    }
+}
+
 .BasketMenu__arrange {
     padding: 20px;
     border-top: 1px solid rgba(255, 255, 255, 0.4);
