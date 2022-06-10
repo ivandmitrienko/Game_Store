@@ -27,10 +27,10 @@ const Gamelist = ({games}) => {
                         <div className="game-item__details">
                             <span className="game-item__title">{game.title}</span>
                             <div className="game-item__genre">
-                                <Gamegenre genre={game.genres} key={game.id+1}/>
+                                <Gamegenre genre={game.genres} key={game.id}/>
                             </div>
                             <div className="game-item__buy">
-                                <Gamebuy game={game} key={game.id+2}/>
+                                <Gamebuy game={game} key={game.id}/>
                             </div>
                         </div>
                     </div>
