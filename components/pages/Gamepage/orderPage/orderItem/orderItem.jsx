@@ -6,7 +6,6 @@ import { AiFillCloseCircle } from 'react-icons/ai';
 import { deleteItemFromBasket } from '../../../../Redux/Basket/reducer';
 
 const OrderItem = ({game}) => {
-    console.log(game);
 
     const dispatch = useDispatch();
     const handleClick = () =>{dispatch(deleteItemFromBasket(game.id));}
