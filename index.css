@@ -36,10 +36,31 @@ header {
   z-index: 999;
 }
 
+@media screen and (max-width: 700px) {
+  header{
+    text-align: start;
+  }
+}
+
 a{
   margin-right: 15px;
   font-size: 20px;
 }
+
+@media screen and (max-width: 900px)  {
+  a{
+    margin-right: 10px;
+    font-size: 15px;
+  }  
+}
+
+@media screen and (max-width: 520px)  {
+  a{
+    margin-right: 5px;
+    font-size: 10px;
+  }  
+}
+
 
 header > span {
   color: #ffff;
@@ -47,6 +68,20 @@ header > span {
   top: 30%;
   left: 3%;
   font-size: 30px;
+}
+
+@media screen and (max-width: 900px)  {
+  header > span{
+    font-size: 25px;
+    top: 35%;
+    left: 2%;
+  }
+}
+
+@media screen and (max-width: 700px)  {
+  header > span{
+    display: none;
+  }
 }
 
 .basket{

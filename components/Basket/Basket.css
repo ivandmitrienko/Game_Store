@@ -10,6 +10,12 @@
     font-weight: bold;
 }
 
+@media screen  and (max-width: 500px) {
+    .BasketBlock__total-price{
+        font-size: 10px;
+    }
+}
+
 .BasketBlock__icon{
     cursor: pointer;
     position: relative;

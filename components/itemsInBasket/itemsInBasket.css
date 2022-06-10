@@ -13,3 +13,13 @@
     left: 15px;
     top: -10px;
 }
+
+@media screen and (max-width:500px) {
+    .itemsInBasket{
+        width: 15px;
+        height: 15px;
+        font-size: 10px;
+        left: 20px;
+        top: -5px;
+    }
+}
