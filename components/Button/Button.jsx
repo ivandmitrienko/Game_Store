@@ -8,6 +8,7 @@ const Button = ({onClick, type, children, size = 's'}) => {
         'btn': true,
         'btn--secondary': type==='secondary',
         'btn--primary': type==='primary',
+        'btn--third': type==='third',
         'btn--small': size==='s',
         'btn--medium': size==='m',
         

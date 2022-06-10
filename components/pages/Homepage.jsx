@@ -1,20 +1,25 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
+// import { ButtonsPaginate } from '../ButtonsPaginate/ButtonsPaginate.jsx';
 import { Gamelist } from './Gamelist/Gamelist.jsx';
 const Homepage = () => {
 
-    const [games, setPost] = useState(null);
+    let [games, setLimitGames] = useState(null);
 
     useEffect(() => {
         fetch(`http://localhost:3000/games`)
         .then(res => res.json())
-        .then(data => setPost(data))
+        .then(data => setLimitGames(data))
     }, []);
 
+    // ?&_limit=18 
+    
     return (
-            <div className='Games'>  
-                {games && <Gamelist games={games} key={games.id}/>}
-            </div>
+        <div className='Games'>  
+            {games && <Gamelist games={games} key={games.id}/>}
+        </div>
+       
+            
     )
 }
 

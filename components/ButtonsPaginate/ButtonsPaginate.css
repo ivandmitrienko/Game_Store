@@ -1,0 +1,7 @@
+.ButtonsPaginate{
+    display: flex;
+}
+
+.ButtonsPaginate__allGames{
+    margin-right: 20px;
+}
