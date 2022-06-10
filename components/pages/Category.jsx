@@ -7,38 +7,51 @@ import { Button } from '../Button/Button.jsx';
 export const Category = () => {
 
     const {genres} = useParams();
-    const [games, setGames] = useState(null);
+    const [games, setGames] = useState([]);
 
     useEffect(() => {
-        getGames(6);
+        getGames(1,6);
     }, [genres]);
 
-    const getGames =(quantity)=>{
-        fetch(`http://localhost:3000/games?genres=${genres}&_limit=${quantity}`)
+    const getGames =(numberPage, quantity)=>{
+        fetch(`http://localhost:3000/games?genres=${genres}&_page=${numberPage}&_limit=${quantity}`)
         .then(res => res.json())
         .then(data => setGames(data));
 
     }
 
-    // useEffect(() => {
-    //     fetch(`http://localhost:3000/games?genres=${genres}&_limit=6`)
-    //     .then(res => res.json())
-    //     .then(data => setGames(data))
-    // }, [genres]);
+    const page = games.length<17?"block":"none";
     
     return (
-          <div className='Games'>
+        <div className='Games'>
             {games && <Gamelist games={games} key={games.id}/>}
             <div className='allButtons'>
-                <Button type = {"third"} onClick={()=>getGames(54)}>
-                        Показать все
-                </Button>
-                <Button type = {"third"} onClick={()=>getGames(54)}>
-                        Вперед
-                </Button>
-                <Button type = {"third"} onClick={()=>getGames(54)}>
-                        Назад
-                </Button>
+                <div style={{display:games.length>17?"none":"block"}}>
+                    <Button type = {"third"} onClick={()=>getGames(1,18)}>
+                            Показать все
+                    </Button>
+                </div>
+                <div style={{display:games.length<17?"none":"block"}}>
+                    <Button type = {"third"} onClick={()=>getGames(1,6)}>
+                            Свернуть
+                    </Button>
+                </div>
+                <div style={{display:page}}>
+                    <Button type = {"third"} onClick={()=>getGames(1,6)}>
+                            1
+                    </Button>
+                </div>
+                <div style={{display:page}}>
+                    <Button type = {"third"} onClick={()=>getGames(2,6)}>
+                            2
+                    </Button>
+                </div>
+                <div style={{display:page}}>
+                    <Button type = {"third"} onClick={()=>getGames(3,6)}>
+                            3
+                    </Button>
+                </div>
+                
             </div>
         </div>    
     )

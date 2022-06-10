@@ -11,6 +11,7 @@ const Homepage = () => {
         getGames(6);
     }, []);
 
+
     const getGames =(quantity)=>{
         fetch(`http://localhost:3000/games?_limit=${quantity}`)
         .then(res => res.json())
@@ -22,11 +23,16 @@ const Homepage = () => {
         <div className='Games'>  
             <h1>Избранное</h1>
             {games && <Gamelist games={games} key={games.id}/>}
-            <div style={{display:games.length>7?"none":"block"}}>
+            <div style={{display:games.length<7?'block':"none"}}>
                 <Button type = {"third"} onClick={()=>getGames(54)}>
-                    Показать все
+                 Показать все
                 </Button>
-            </div> 
+            </div>
+            <div style={{display:games.length>6?"block":"none"}}>
+                    <Button type = {"third"} onClick={()=>getGames(6)}>
+                            Свернуть
+                    </Button>
+                </div>
         </div>
         
        
