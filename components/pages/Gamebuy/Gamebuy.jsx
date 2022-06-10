@@ -17,7 +17,7 @@ const Gamebuy = ({game}) => {
         } else {
             dispatch(setItemInBasket(game));
         }
-    }; 
+    };
 
 
     return (      

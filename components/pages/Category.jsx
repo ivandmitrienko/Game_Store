@@ -8,6 +8,7 @@ export const Category = () => {
 
     const {genres} = useParams();
     const [games, setGames] = useState([]);
+    const [color, setColor] = useState(0);
 
     useEffect(() => {
         getGames(1,6);
@@ -21,7 +22,7 @@ export const Category = () => {
     }
 
     const page = games.length<17?"block":"none";
-    
+     
     return (
         <div className='Games'>
             {games && <Gamelist games={games} key={games.id}/>}
@@ -37,17 +38,17 @@ export const Category = () => {
                     </Button>
                 </div>
                 <div style={{display:page}}>
-                    <Button type = {"third"} onClick={()=>getGames(1,6)}>
+                    <Button type = {color?'fouth':'third'} onClick={()=>{getGames(1,6);setColor(0)}}>
                             1
                     </Button>
                 </div>
                 <div style={{display:page}}>
-                    <Button type = {"third"} onClick={()=>getGames(2,6)}>
+                    <Button type = {color===1?'third':'fouth'} onClick={()=>{getGames(2,6);setColor(1)}}>
                             2
                     </Button>
                 </div>
                 <div style={{display:page}}>
-                    <Button type = {"third"} onClick={()=>getGames(3,6)}>
+                    <Button type = {color===2?'third':'fouth'} onClick={()=>{getGames(3,6); setColor(2)}}>
                             3
                     </Button>
                 </div>
