@@ -3,11 +3,11 @@
 Сайт создан с помощью Create React App.
 
 # Скрипты
-Для начала работы с проектом надо установить зависимость введя в консоль npm install или короткую версию npm i.
+Для начала работы с проектом надо установить зависимость введя в консоль `npm install` или короткую версию `npm i`.
 
 В каталоге проекта вы можете запустить:
 
-**npm start**
+`npm start`
 
 Запускает приложение в режиме разработки (живая dev-сборка + json-server).
 Откройте http://localhost:8080,( http://localhost:3000/games - для просмотра файла db.json) чтобы просмотреть его в браузере.
@@ -16,7 +16,7 @@
 
 **npm run build**
 
-Собирает проeкт в папку build.
+Собирает проeкт в папку `build`.
 Он правильно связывает React в производственном режиме и оптимизирует сборку для достижения максимальной производительности. Сборка минифицирована, а имена файлов включают хеши.
 После этого Ваше приложение готово к развертыванию на сервере!
 
@@ -37,7 +37,7 @@
 
 бесшовное перестраивание интерфейса и роутинг; хотя бы на одной странице отображается более 50 динамичных однородных элементов [Homepage.jsx](https://github.com/ivandmitrienko/Game_Store/blob/main/components/pages/Homepage.jsx) можно посмотреть все игры нажав кнопу "Показать все".
 
-**навигация в приложении**
+**Навигация в приложении**
 
 кнопки браузера "вперёд", "назад", "освежить" работают полностью корректно, а также, реализован постраничный просмотр какого-либо длинного списка
 [Homepage.jsx](https://github.com/ivandmitrienko/Game_Store/blob/main/components/pages/Homepage.jsx), [Category.jsx](https://github.com/ivandmitrienko/Game_Store/blob/main/components/pages/Category.jsx),  [Gamepage](https://github.com/ivandmitrienko/Game_Store/blob/main/components/pages/Gamepage/Gamepage.jsx).
@@ -46,13 +46,17 @@
 
 Данное приложение работаспособна и адаптивна на iphone 12 pro.
 
-**коммуникации**
+**Коммуникации**
 
 Данное приложение для загрузки данных широко использует json-server, а также веб-приложение использует "redux-persist" [App.js](https://github.com/ivandmitrienko/Game_Store/blob/main/components/App.js), [index.js](https://github.com/ivandmitrienko/Game_Store/blob/main/components/Redux/index.js) для сохранения данных пользователя и/или для обмена данными с другими пользователями.
 
-**модель данных**
+**Модель данных**
 
 для хранения и передачи данных использованы react-redux и @reduxjs/toolkit (https://github.com/ivandmitrienko/Game_Store/tree/main/components/Redux)
+
+**Сборка проекта**
+Есть dev-сборка при помощи скрипта  `npm run build`.
+При необходимости можно собрать prod-сборку для запуска на своём сервере при помощи команды  `npm run livebuild`.
 
 
 
