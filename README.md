@@ -42,5 +42,13 @@
 кнопки браузера "вперёд", "назад", "освежить" работают полностью корректно, а также, реализован постраничный просмотр какого-либо длинного списка
 [Homepage.jsx](https://github.com/ivandmitrienko/Game_Store/blob/main/components/pages/Homepage.jsx), [Category.jsx](https://github.com/ivandmitrienko/Game_Store/blob/main/components/pages/Category.jsx),  [Gamepage](https://github.com/ivandmitrienko/Game_Store/blob/main/components/pages/Gamepage/Gamepage.jsx).
 
+**кроссбраузерность**
+
+Данное приложение работаспособна и адаптивна на iphone 12 pro.
+
+**коммуникации**
+
+Данное приложение для загрузки данных широко использует json-server, а также веб-приложение использует "redux-persist" [App.js](https://github.com/ivandmitrienko/Game_Store/blob/main/components/App.js),[index.js](https://github.com/ivandmitrienko/Game_Store/blob/main/components/Redux/index.js) для сохранения данных пользователя и/или для обмена данными с другими пользователями.
+
 
 
