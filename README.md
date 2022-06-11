@@ -52,7 +52,7 @@
 
 **модель данных**
 
-для хранения и передачи данных использованы react-redux @reduxjs/toolkit (https://github.com/ivandmitrienko/Game_Store/tree/main/components/Redux)
+для хранения и передачи данных использованы react-redux и @reduxjs/toolkit (https://github.com/ivandmitrienko/Game_Store/tree/main/components/Redux)
 
 
 
