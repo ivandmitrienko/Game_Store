@@ -21,3 +21,29 @@
     margin-left: auto;
 
 }
+
+@media screen and (max-width:500px) {
+    .orderItem__cover{
+        width: 300px;
+        margin-right: 20px;      
+    }
+    .orderItem__title{
+        font-size: 14px;
+        font-weight: normal;
+        margin-right: 5px;
+       
+    }
+    .orderItem__price{
+        position: absolute;
+        top: 25%;
+        left: 70%;
+        font-size: 14px;
+        font-weight: normal;
+        margin-left: 5px;
+    
+    }
+
+    .orderItem__delete-icon{
+        width: 15px;
+    }
+}

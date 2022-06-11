@@ -33,6 +33,11 @@
     }
 }
 
+@media screen and (max-width:500px){
+    .Gamepage-iframe{
+        height: 200px;
+    }
+}
 
 
 .Gamepage__buy-game{
