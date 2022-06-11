@@ -24,12 +24,12 @@ const Gamepage = () => {
                  <h1 className="Gamepage__title">{game.title}</h1>
                  <div className="Gamepage__content">
                      <div className="Gamepage__left">
-                         <iframe style={{width: '90%', height: "400px"}} src={game.video} title="Youtube video player" frameBorder={0}></iframe>
+                         <iframe class="Gamepage-iframe"  src={game.video} title="Youtube video player" frameBorder={0}></iframe>
                      </div>
                      <div className="Gamepage__right">
                          <Gamecover image={game.image} />
                          <p>{game.description}</p>
-                         <p className="secondary-text">Популярные метки этого продукта:</p>
+                         <p className="Gamepage-text">Популярные метки этого продукта:</p>
                           <Gamegenre genre={game.genres} key={game.id+1}/>
                          <div className="Gamepage__buy-game">
                              <Gamebuy game={game}/>
