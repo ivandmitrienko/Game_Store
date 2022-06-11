@@ -28,8 +28,10 @@
 
 Внешний вид изменяется при изменении роутингов [App.jsx](https://github.com/ivandmitrienko/Game_Store/blob/main/components/App.js) и [Layuot.jsx](https://github.com/ivandmitrienko/Game_Store/blob/main/components/Layout.jsx):
 
-1. [Category.jsx](https://github.com/ivandmitrienko/Game_Store/blob/main/components/pages/Category.jsx) зависит от того какая выбрана категория игр.
-2.  
+1. [Category.jsx](https://github.com/ivandmitrienko/Game_Store/blob/main/components/pages/Category.jsx) зависит от того какая выбрана категория игр, также есть кнопки для просмотра всех игр по данной категории или постранично.
+2.  Просмотр всех игр [Homepage.jsx](https://github.com/ivandmitrienko/Game_Store/blob/main/components/pages/Homepage.jsx) можно посмотреть все игры нажав кнопу "Показать все".
+3.  При выборе игры и нажатии кнопки "Добавит в корзину"  [Basket.jsx](https://github.com/ivandmitrienko/Game_Store/blob/main/components/Basket/Basket.jsx) отражает количество выбраных игр в корзине и общую ценну. При клике по карзине отражается окно с оформлением заказа [BaskenMenu.jsx](https://github.com/ivandmitrienko/Game_Store/blob/main/components/BasketMenu/BasketMenu.jsx) или сообщение "Корзина пуста". После чего при клике по кнопке "Оформить заказ" происходит переход на страницу для оформления заказа [orderPage.jsx](https://github.com/ivandmitrienko/Game_Store/blob/main/components/pages/Gamepage/orderPage/orderPage.jsx), где можно увидеть (удалить) выбраные игры и общую сумму
+4. На главной странице и страницах по категории кликнув па одной из игр осуществляется переход на [Gamepage](https://github.com/ivandmitrienko/Game_Store/blob/main/components/pages/Gamepage/Gamepage.jsx), где можно ознакомиться с игрой и добавит в корзину.
 
 
 
