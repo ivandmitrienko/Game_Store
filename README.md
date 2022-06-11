@@ -28,6 +28,9 @@
 
 Внешний вид изменяется при изменении роутингов [App.jsx](https://github.com/ivandmitrienko/Game_Store/blob/main/components/App.js) и [Layuot.jsx](https://github.com/ivandmitrienko/Game_Store/blob/main/components/Layout.jsx):
 
+1. [Category.jsx]([https://github.com/ivandmitrienko/Game_Store/blob/main/components/pages/Category.jsx] зависит от того какая выбрана категория игр.
+2.  
+
 
 
 
