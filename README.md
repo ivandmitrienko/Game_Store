@@ -48,7 +48,7 @@
 
 **коммуникации**
 
-Данное приложение для загрузки данных широко использует json-server, а также веб-приложение использует "redux-persist" [App.js](https://github.com/ivandmitrienko/Game_Store/blob/main/components/App.js),[index.js](https://github.com/ivandmitrienko/Game_Store/blob/main/components/Redux/index.js) для сохранения данных пользователя и/или для обмена данными с другими пользователями.
+Данное приложение для загрузки данных широко использует json-server, а также веб-приложение использует "redux-persist" [App.js](https://github.com/ivandmitrienko/Game_Store/blob/main/components/App.js), [index.js](https://github.com/ivandmitrienko/Game_Store/blob/main/components/Redux/index.js) для сохранения данных пользователя и/или для обмена данными с другими пользователями.
 
 
 
