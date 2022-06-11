@@ -34,9 +34,11 @@
 4. На главной странице и страницах по категории кликнув па одной из игр осуществляется переход на [Gamepage](https://github.com/ivandmitrienko/Game_Store/blob/main/components/pages/Gamepage/Gamepage.jsx), где можно ознакомиться с игрой и добавит в корзину.
 
 **Производительность отрисовки**
+
 бесшовное перестраивание интерфейса и роутинг; хотя бы на одной странице отображается более 50 динамичных однородных элементов [Homepage.jsx](https://github.com/ivandmitrienko/Game_Store/blob/main/components/pages/Homepage.jsx) можно посмотреть все игры нажав кнопу "Показать все".
 
 **навигация в приложении**
+
 кнопки браузера "вперёд", "назад", "освежить" работают полностью корректно, а также, реализован постраничный просмотр какого-либо длинного списка
 [Homepage.jsx](https://github.com/ivandmitrienko/Game_Store/blob/main/components/pages/Homepage.jsx), [Category.jsx](https://github.com/ivandmitrienko/Game_Store/blob/main/components/pages/Category.jsx),  [Gamepage](https://github.com/ivandmitrienko/Game_Store/blob/main/components/pages/Gamepage/Gamepage.jsx).
 
