@@ -24,7 +24,7 @@ const Gamepage = () => {
                  <h1 className="Gamepage__title">{game.title}</h1>
                  <div className="Gamepage__content">
                      <div className="Gamepage__left">
-                         <iframe class="Gamepage-iframe"  src={game.video} title="Youtube video player" frameBorder={0}></iframe>
+                         <iframe className="Gamepage-iframe"  src={game.video} title="Youtube video player" frameBorder={0}></iframe>
                      </div>
                      <div className="Gamepage__right">
                          <Gamecover image={game.image} />
